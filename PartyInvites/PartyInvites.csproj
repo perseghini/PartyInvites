@@ -57,9 +57,28 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\sorryyoucantcome.html" />
+    <Content Include="Content\PartyStyles.css" />
+    <Content Include="Content\seeyouthere.html" />
+    <Content Include="Pages\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\GuestResponse.cs" />
+    <Compile Include="Models\Repository\IRepository.cs" />
+    <Compile Include="Models\Repository\MemoryRepository.cs" />
+    <Compile Include="Pages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presenters\IPresenter.cs" />
+    <Compile Include="Presenters\Results\DataResult.cs" />
+    <Compile Include="Presenters\Results\IResult.cs" />
+    <Compile Include="Presenters\Results\RedirectResult.cs" />
+    <Compile Include="Presenters\RSVPPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +89,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
