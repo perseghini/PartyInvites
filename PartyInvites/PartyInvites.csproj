@@ -75,9 +75,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\sorryyoucantcome.html" />
     <Content Include="Content\PartyStyles.css" />
     <Content Include="Content\seeyouthere.html" />
+    <Content Include="Content\sorryyoucantcome.html" />
     <Content Include="Pages\Default.aspx" />
     <Content Include="Pages\Summary.aspx" />
     <Content Include="Web.config" />
